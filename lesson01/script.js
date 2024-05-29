@@ -76,3 +76,16 @@ const color2 = ['purple', 'yellow', 'pink']
 let colorMixed = [...color2, ...color1]
 console.log(colorMixed)
 console.log(['🍐', '🍎', '🍇', ...color1])
+
+const mailAddress = 'taro@yamada.com'
+console.log(mailAddress.includes('z'))
+
+
+let limit = 50
+console.log(limit == '50') //true
+console.log(limit === '50') //false
+console.log(limit > 50)
+console.log(limit <= 50)
+console.log(limit != 40)
+
+console.log(typeof true)

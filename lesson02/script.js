@@ -66,3 +66,60 @@ const isLogin = true
 if (!isLogin) {
   console.log('ログインして下さい')
 }
+
+
+let scores = [50, 40, 30, 0, 100, 20, 10];
+
+for (let i = 0; i < scores.length; i++) {
+
+  if (scores[i] === 0) {
+    continue
+  }
+
+  console.log('あなたのスコア: ', scores[i]);
+
+  if (scores[i] === 100) {
+    console.log('100点獲得しました！');
+    break;
+  }
+
+}
+
+let grade = 'Z'
+
+switch (grade) {
+  case 'A':
+    console.log('優秀！')
+    break
+  case 'B':
+    console.log('良い')
+    break
+  case 'C':
+    console.log('普通')
+    break
+  case 'D':
+    console.log('がんばりましょう')
+    break
+  case 'E':
+    console.log('落第')
+    break
+  default:
+    console.log('不明')
+
+}
+
+let size = 25
+
+if (true) {
+  let size = 26
+  // console.log(size)
+  let brand = 'nike'
+}
+console.log(size, brand)
+
+
+
+var abc = 10
+if (true) {
+  console.log(abc)
+}

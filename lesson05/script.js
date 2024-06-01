@@ -78,3 +78,46 @@ console.log(article.parentElement.parentElement)
 
 // 先祖要素
 console.log(article.closest('html'))
+
+// 兄弟要素
+const heading = document.querySelector('article h2')
+console.dir(heading)
+console.log(heading.previousElementSibling) // null
+
+// ToDoリスト
+const button = document.querySelector('button')
+const ul = document.querySelector('ul')
+const input = document.querySelector('input[type=text]')
+// button.onclick = function () {
+//   console.log('ボタンをクリックしました')
+// }
+
+button.addEventListener('click', () => {
+  // ul.innerHTML += '<li>新しいToDo</li>'
+  const li = document.createElement('li')
+  console.dir(input.value)
+  if (input.value !== '') {
+    li.textContent = input.value
+    ul.append(li) //末尾に追加 prepend: 先頭に追加
+    input.value = ''
+  } else {
+    alert('未入力では追加できません')
+  }
+})
+
+// const lists = document.querySelectorAll('ul li')
+// lists.forEach(list => {
+//   list.addEventListener('click', e => {
+//     e.stopPropagation()
+//     // e.target.style.textDecoration = 'line-through'
+//     e.target.remove()
+//   })
+// })
+
+ul.addEventListener('click', e => {
+  console.log('ulをクリックしました')
+  console.dir(e.target.tagName)
+  if (e.target.tagName === 'LI') {
+    e.target.remove()
+  }
+})

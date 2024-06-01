@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.move {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  padding: 30px;
+  background-color: #eee;
+  text-align: center;
+}
+
+.move {
+  position: relative;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: gold;
+  position: absolute;
+}

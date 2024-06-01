@@ -11,3 +11,12 @@
   color: limegreen;
   border: 1px dotted limegreen;
 }
+
+li {
+  list-style: none;
+  max-width: 200px;
+  padding: 8px;
+  margin: 8px auto;
+  background: #eee;
+  border: 1px dotted #ddd;
+}

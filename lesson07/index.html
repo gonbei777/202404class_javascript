@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript基礎クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>JavaScript基礎クイズ</h1>
+  </header>
+
+  <main>
+
+    <div class="result d-none">
+      <p>あなたのスコアは<span class="result-score">0</span>点です。</p>
+    </div>
+
+    <section class="quiz">
+      <form class="quiz-form" method="post">
+        <dl class="quiz-list">
+          <div class="quiz-item">
+            <dt class="quiz-q">
+              JavaScriptとはコンパイルが必要な言語である。
+            </dt>
+            <dd class="quiz-choice">
+              <div><label><input type="radio" name="q1" value="A"> はい </label></div>
+              <div><label><input type="radio" name="q1" value="B"> いいえ</label></div>
+            </dd>
+          </div>
+          <div class="quiz-item">
+            <dt class="quiz-q">
+              以下に示す配列で <code>sweets[1]</code> で取り出せるデータはどれか選んでください。
+              <code class="code-block">
+            const sweets = ['ケーキ','マカロン','マドレーヌ'];
+            </code>
+            </dt>
+            <dd class="quiz-choice">
+              <div><label><input type="radio" name="q2" value="A"> ケーキ </label></div>
+              <div><label><input type="radio" name="q2" value="B"> マカロン</label></div>
+            </dd>
+          </div>
+          <div class="quiz-item">
+            <dt class="quiz-q">
+              次のコードで、<code>result</code>の結果はどれになるか選んでください。
+              <pre><code class="code-block">const calc = (a,b) => {
+  const square = a * b;
+}
+
+const result = calc(3,4);
+</code></pre>
+            </dt>
+            <dd class="quiz-choice">
+              <div><label><input type="radio" name="q3" value="A"> undefined </label></div>
+              <div><label><input type="radio" name="q3" value="B"> 12</label></div>
+            </dd>
+          </div>
+          <div class="quiz-item">
+            <dt class="quiz-q">
+              オブジェクト内のメソッドからプロパティのデータにアクセスする時に使うキーワードは何か、下記コードをヒントにして、どれか選んでください。
+              <pre><code class="code-block">const car = {
+  name: 'CIVIC',
+  maker: 'TOYOTA',
+  year: 2022,
+  display: function() {
+    console.log( この車の車名は、<b>( ※キーワード ).name</b> です);
+  }
+};
+</code></pre>
+            </dt>
+            <dd class="quiz-choice">
+              <div><label><input type="radio" name="q4" value="A"> that </label></div>
+              <div><label><input type="radio" name="q4" value="B"> this</label></div>
+            </dd>
+          </div>
+          <div class="quiz-item">
+            <dt class="quiz-q">
+              下記のコードで、全てのdivタグについてJavaScriptで操作をしたいとき、どのメソッドを使うか選んでください。
+              <pre><code class="code-block">&lt;h2&gt;関西3大名物&lt;/h2&gt;
+&lt;div&gt;たこやき&lt;/div&gt;
+&lt;div&gt;通天閣&lt;/div&gt;
+&lt;div&gt;お笑い&lt;/div&gt;
+</code></pre>
+            </dt>
+            <dd class="quiz-choice">
+              <div><label><input type="radio" name="q5" value="A"> querySelector </label></div>
+              <div><label><input type="radio" name="q5" value="B"> querySelectorAll</label></div>
+            </dd>
+          </div>
+        </dl>
+        <div class="quiz-submit">
+          <button class="quiz-submit-btn">解答する</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
